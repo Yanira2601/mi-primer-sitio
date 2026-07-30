@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tarjeta Personal</title>
-    <link rel="stylesheet" href= "styles.css">
+    <title>Fútbol en Acción</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <div class="card">
-    <h1>¡Hola, soy Yanira y estoy haciendo mi Wed!</h1>
-    <p>Estoy aprendiendo a programar con HTML y CSS, y a respaldar mi codigo en la nube con Git  y GitHub.</p>
-    <button onclick="alert('¡Gracias por visitar mi sitio web!')">Saludar</button>
- </div>
+    <div class="page">
+        <header class="topbar">
+            <a href="#" class="brand">⚽ Fútbol en Acción</a>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#destacados">Destacados</a>
+                <a href="#estadisticas">Estadísticas</a>
+            </nav>
+        </header>
+
+        <main id="inicio">
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="eyebrow">Liga y pasión</p>
+                    <h1>Tu fuente para seguir el fútbol con emoción</h1>
+                    <p class="intro">
+                        Noticias, resultados y datos clave para vivir cada partido como si estuvieras en la cancha.
+                    </p>
+
+                    <div class="actions">
+                        <a href="#destacados" class="btn btn-primary">Ver partidos</a>
+                        <a href="#estadisticas" class="btn btn-secondary">Ver estadísticas</a>
+                    </div>
+                </div>
+
+                <aside class="hero-card">
+                    <h2>Próximo encuentro</h2>
+                    <p class="match">Real Madrid vs Barcelona</p>
+                    <p class="match-time">Domingo · 18:30</p>
+                    <ul>
+                        <li>Transmisión en vivo</li>
+                        <li>Análisis previo</li>
+                        <li>Estadísticas en tiempo real</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="stats-section" id="estadisticas">
+                <article class="stat-card">
+                    <h3>24</h3>
+                    <p>Partidos</p>
+                </article>
+                <article class="stat-card">
+                    <h3>18</h3>
+                    <p>Goles</p>
+                </article>
+                <article class="stat-card">
+                    <h3>12</h3>
+                    <p>Victorias</p>
+                </article>
+                <article class="stat-card">
+                    <h3>4</h3>
+                    <p>Derrotas</p>
+                </article>
+            </section>
+
+            <section class="highlights" id="destacados">
+                <div class="section-title">
+                    <p class="eyebrow">Destacados</p>
+                    <h2>Lo más reciente del torneo</h2>
+                </div>
+
+                <div class="cards">
+                    <article class="highlight-card">
+                        <h3>Goleada en casa</h3>
+                        <p>El equipo local se impuso 3-1 y sigue invicto en la temporada.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Jugador del mes</h3>
+                        <p>Un delantero brillante lidera la tabla de goleadores con 8 anotaciones.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Próxima fecha</h3>
+                        <p>El duelo más esperado del calendario llega esta semana con gran expectativa.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Fútbol en Acción · Todos los derechos reservados</p>
+        </footer>
+    </div>
 </body>
 </html>
